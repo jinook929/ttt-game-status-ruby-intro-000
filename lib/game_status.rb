@@ -71,7 +71,7 @@ def winner(board)
   else
     puts "winner"
     puts board[won?(board)[0]]
-    if(board[won?(board)[0]])
+    if(board[won?(board)[0]] == "X")
       return "X"
     else
       return "O"
