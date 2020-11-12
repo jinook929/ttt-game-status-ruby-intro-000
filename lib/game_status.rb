@@ -22,12 +22,12 @@ def won?(board)
     counterX = 0 
     counterY = 0
     win_combination.each do |combo|
-      if(combo == "X")
+      if(board[combo] == "X")
         counterX += 1 
       end 
     end 
     win_combination.each do |combo|
-      if(combo == "Y")
+      if(board[combo] == "Y")
         counterY += 1 
       end 
     end 
