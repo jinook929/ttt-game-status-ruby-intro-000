@@ -18,7 +18,7 @@ WIN_COMBINATIONS = [
 board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
 
 def won?(board)
-  WIN_COMBINATIONS.each { |win_combination|
+  WIN_COMBINATIONS.each do |win_combination|
     # counterX = 0 
     # counterY = 0
     # win_combination.each { |combo|
@@ -45,12 +45,12 @@ def won?(board)
     position_2 = board[win_index_2]
     position_3 = board[win_index_3]
     
-    if(position_1 == "X" && position_2 == "X" && position_3 == "X")
+    if position_1 == "X" && position_2 == "X" && position_3 == "X"
       return win_combination
     else
       return false
     end
-  }
+  end
 end
 
 
