@@ -23,8 +23,18 @@ def won?(board)
     counterY = 0
     win_combination.each do |combo|
       if(combo == "X")
-        counter += 1 
+        counterX += 1 
       end 
+    end 
+    win_combination.each do |combo|
+      if(combo == "Y")
+        counterY += 1 
+      end 
+    end 
+    if(counterX == 3 || counterY == 3)
+      return true 
+    else 
+      return false 
     end 
     # win_index_1 = win_combination[0]
     # win_index_2 = win_combination[1]
