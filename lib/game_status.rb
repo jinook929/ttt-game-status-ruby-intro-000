@@ -65,9 +65,10 @@ end
 
 
 def winner(board)
+  puts board
   if(!won?(board))
     return nil
-  else
+  elsif(won?(board))
     puts "#{won?[board][0]} #{won?[board][1]} #{"Q"}"
     if(board[won?[board][0]] == "X" && board[won?[board][1]] == "X" && board[won?[board][2]] == "X")
       return "X"
