@@ -18,8 +18,7 @@ WIN_COMBINATIONS = [
 # board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
 
 def won?(board)
-  # WIN_COMBINATIONS.each do |win_combination|
-  WIN_COMBINATIONS.each do |n|
+  WIN_COMBINATIONS.each do |win_combination|
   # [[0,1,2], [3,4,5], [6,7,8], [0,3,6], [1,4,7], [2,5,8], [0,4,8], [2,4,6]].each do |win_combination|
     # counterX = 0 
     # counterY = 0
@@ -39,9 +38,9 @@ def won?(board)
     #   return false 
     # end 
     
-    win_index_1 = n[0]
-    win_index_2 = n[1]
-    win_index_3 = n[2]
+    win_index_1 = win_combination[3]
+    win_index_2 = win_combination[4]
+    win_index_3 = win_combination[5]
     
     position_1 = board[win_index_1]
     position_2 = board[win_index_2]
@@ -51,7 +50,7 @@ def won?(board)
     puts "#{win_index_3} #{position_3}"
     
     if (position_1 == "X" && position_2 == "X" && position_3 == "X")
-      return n
+      return win_combination
     else
       return false
     end
