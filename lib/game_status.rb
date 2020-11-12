@@ -68,13 +68,11 @@ def winner(board)
   if(!won?(board))
     puts "no winner..."
     return nil
-  elsif(won?(board))
+  else
     puts "winner"
     puts board[won?(board)[0]]
     if(board[won?(board)[0]])
       return "X"
-    # elsif(board[won?[board][0]] == "Y")
-    #   return "O"
     else
       return "O"
     end
