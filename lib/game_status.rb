@@ -71,7 +71,7 @@ def winner(board)
   elsif(won?(board))
     puts "winner"
     puts board[won?(board)[0]]
-    if(board[won?[board][0]] == "X" && board[won?[board][1]] == "X" && board[won?[board][2]] == "X")
+    if(board[won?(board)[0]] == "X" && board[won?[board][1]] == "X" && board[won?[board][2]] == "X")
       return "X"
     # elsif(board[won?[board][0]] == "Y")
     #   return "Y"
