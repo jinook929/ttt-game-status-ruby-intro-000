@@ -72,7 +72,7 @@ def winner(board)
   if(!won?(board))
     return nil
   else
-    puts "#{won?[board][0]} #{won?[board][1} #{won?[board][2]}"
+    puts "#{won?[board][0]} #{won?[board][1]} #{won?[board][2]}"
     if(board[won?[board][0]] == "X")
       return "X"
     # elsif(board[won?[board][0]] == "Y")
