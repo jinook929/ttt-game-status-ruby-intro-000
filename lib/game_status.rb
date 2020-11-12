@@ -34,6 +34,9 @@ def won?(board)
 end
 
 def full?(board)
-  if(board.any? { |n| n == "" } || board.any? { |n| n == "" })
-    
+  if(board.any? { |n| n == " " } || board.any? { |n| n == "" } || board.any? { |n| n == nil })
+    return false 
+  else 
+    return true
+  end
 end
