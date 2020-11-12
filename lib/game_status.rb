@@ -65,8 +65,8 @@ end
 
 
 def winner(board)
-  puts board
   if(!won?(board))
+    puts "no winner..."
     return nil
   elsif(won?(board))
     puts "winner"
