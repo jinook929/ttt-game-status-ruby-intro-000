@@ -19,23 +19,23 @@ board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
 
 def won?(board)
   WIN_COMBINATIONS.each { |win_combination|
-    counterX = 0 
-    counterY = 0
-    win_combination.each { |combo|
-      if(board[combo] == "X")
-        counterX += 1 
-      end 
-    } 
-    win_combination.each { |combo|
-      if(board[combo] == "Y")
-        counterY += 1 
-      end 
-    } 
-    if(counterX == 3 || counterY == 3)
-      return win_combination 
-    else 
-      return false 
-    end 
+    # counterX = 0 
+    # counterY = 0
+    # win_combination.each { |combo|
+    #   if(board[combo] == "X")
+    #     counterX += 1 
+    #   end 
+    # } 
+    # win_combination.each { |combo|
+    #   if(board[combo] == "Y")
+    #     counterY += 1 
+    #   end 
+    # } 
+    # if(counterX == 3 || counterY == 3)
+    #   return win_combination 
+    # else 
+    #   return false 
+    # end 
     # win_index_1 = win_combination[0]
     # win_index_2 = win_combination[1]
     # win_index_3 = win_combination[2]
