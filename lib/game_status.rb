@@ -32,7 +32,7 @@ def won?(board)
       end 
     end 
     if(counterX == 3 || counterY == 3)
-      return true 
+      return win_combination 
     else 
       return false 
     end 
