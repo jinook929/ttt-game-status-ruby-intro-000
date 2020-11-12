@@ -50,7 +50,7 @@ def won?(board)
     puts "#{win_index_3} #{position_3}"
     
     if (position_1 == "X" && position_2 == "X" && position_3 == "X")
-      return win_combination.inspect
+      puts win_combination
     else
       return false
     end
