@@ -16,5 +16,5 @@ WIN_COMBINATIONS = [
 ]
 
 def won?(arg)
-  
+  WIN_COMBINATIONS.each
 end
